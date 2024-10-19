@@ -1,0 +1,20 @@
+﻿@model bool
+
+@if (Model==false)
+{
+    <a title="Đăng ký" asp-controller="KhachHang" asp-action="DangKy" class="position-relative me-4 my-auto">
+        <i class="fas fa-regular fa-registered fa-2x"></i>
+    </a>
+    <a title="Đăng nhập" asp-controller="KhachHang" asp-action="DangNhap" class="position-relative me-4 my-auto">
+        <i class="fas fa-regular fa-file-import fa-2x"></i>
+    </a>
+}
+else
+{
+    <a title="Profile" asp-controller="KhachHang" asp-action="Profile" class="position-relative me-4 my-auto">
+        <i class="fas fa-regular fa-user fa-2x"></i>
+    </a>
+    <a title="Đăng xuất" asp-controller="KhachHang" asp-action="DangXuat" class="my-auto">
+        <i class="fas fa-regular fa-file-export fa-2x"></i>
+    </a>
+}

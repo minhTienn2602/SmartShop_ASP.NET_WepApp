@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ECommerceMVC.ViewModels.HangHoaVM>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "_DanhSachHangHoa";
+}
+
+<h1>Search</h1>
+<!--Hang hoa list Start-->
+<!--Nhúng view list hàng hóa vào-->
+@await Html.PartialAsync("ProductItem", Model)

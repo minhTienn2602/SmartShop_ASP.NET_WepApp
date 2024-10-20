@@ -1257,6 +1257,10 @@
       "PackagePath": "staticwebassets\\img\\banner-fruits.jpg"
     },
     {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\best-product-1.jpg",
       "PackagePath": "staticwebassets\\img\\best-product-1.jpg"
     },

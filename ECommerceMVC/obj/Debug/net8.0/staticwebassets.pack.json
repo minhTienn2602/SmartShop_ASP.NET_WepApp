@@ -353,6 +353,10 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\banner-08.jpg"
     },
     {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\hero-img-9.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\hero-img-9.jpg"
+    },
+    {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\man.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
     },

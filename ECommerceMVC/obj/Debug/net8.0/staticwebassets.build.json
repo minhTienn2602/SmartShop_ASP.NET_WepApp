@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pwMkRRd9MA8vKrLHafQaN5nqp/VWlN9LPpXtyqWPk3s=",
+  "Hash": "mxWM2dtb0C0Bbv3PwScUcatH9tL4yJ5UzNsfJEHRG00=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -5221,6 +5221,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\banner-08.jpg"
+    },
+    {
+      "Identity": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\hero-img-9.jpg",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "Hinh/KhachHang/hero-img-9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\hero-img-9.jpg"
     },
     {
       "Identity": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\man.jpg",

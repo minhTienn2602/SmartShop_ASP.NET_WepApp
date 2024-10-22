@@ -203,6 +203,40 @@ namespace ECommerceMVC.Controllers
             // Trả về view với dữ liệu hiện tại nếu có lỗi xảy ra
             return View(model);
         }
+        [HttpGet]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ChangePassword(ChangePasswordVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var khachHang = _context.KhachHangs.SingleOrDefault(p => p.MaKh == User.FindFirst("CustomerID").Value);
+                string oldPass = model.OldPassword.ToMd5Hash(khachHang.RandomKey);
+                if (oldPass != khachHang.MatKhau)
+                {
+                    ModelState.AddModelError("OldPassword", "Mật khẩu cũ không đúng!");
+                }
+                else
+                {
+                    if(model.NewPassword!=model.ConfirmPassword)
+                    {
+                        ModelState.AddModelError("ConfirmPassword", "Mật khẩu nhập lại không đúng!");
+                    }
+                    else
+                    {
+                        khachHang.MatKhau = model.NewPassword.ToMd5Hash(khachHang.RandomKey);
+                        _context.Update(khachHang);
+                        _context.SaveChanges();
+                    }
+                }
+            }
+
+            return View(model);
+        }
 
     }
 }

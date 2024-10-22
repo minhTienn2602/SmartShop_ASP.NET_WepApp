@@ -333,6 +333,10 @@
       "PackagePath": "staticwebassets\\Hinh\\HangHoa\\To.gif"
     },
     {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\AI.png",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\AI.png"
+    },
+    {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\Author.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\Author.jpg"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mxWM2dtb0C0Bbv3PwScUcatH9tL4yJ5UzNsfJEHRG00=",
+  "Hash": "zKweG5kX0iudr1F6G8LIniSeCcGEdhb2r3DlLn5/cVA=",
   "Source": "ECommerceMVC",
   "BasePath": "_content/ECommerceMVC",
   "Mode": "Default",
@@ -5145,6 +5145,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Hinh\\icons\\Zoom.png"
+    },
+    {
+      "Identity": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\AI.png",
+      "SourceId": "ECommerceMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\",
+      "BasePath": "_content/ECommerceMVC",
+      "RelativePath": "Hinh/KhachHang/AI.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Hinh\\KhachHang\\AI.png"
     },
     {
       "Identity": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\android_300200.png",

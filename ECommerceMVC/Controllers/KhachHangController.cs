@@ -105,7 +105,7 @@ namespace ECommerceMVC.Controllers
                             {
                                 new Claim(ClaimTypes.Email,khachHang.Email),
                                 new Claim(ClaimTypes.Name,khachHang.HoTen),
-                                new Claim("CustomerID",khachHang.MaKh),
+                                new Claim(MySetting.CLAIM_CUSTOMERID,khachHang.MaKh),
                                 new Claim(ClaimTypes.Role,"Customer")
                             };
                             var claimsIdentity=new ClaimsIdentity(claims,CookieAuthenticationDefaults.AuthenticationScheme);
@@ -139,7 +139,7 @@ namespace ECommerceMVC.Controllers
         [HttpGet]
         public IActionResult Profile()
         {
-            string MaKh = User.FindFirst("CustomerID")?.Value;
+            string MaKh = User.FindFirst(MySetting.CLAIM_CUSTOMERID)?.Value;
             var khachHang=_context.KhachHangs.SingleOrDefault(p=>p.MaKh==MaKh);
             if (khachHang != null)
             {
@@ -214,7 +214,7 @@ namespace ECommerceMVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var khachHang = _context.KhachHangs.SingleOrDefault(p => p.MaKh == User.FindFirst("CustomerID").Value);
+                var khachHang = _context.KhachHangs.SingleOrDefault(p => p.MaKh == User.FindFirst(MySetting.CLAIM_CUSTOMERID).Value);
                 string oldPass = model.OldPassword.ToMd5Hash(khachHang.RandomKey);
                 if (oldPass != khachHang.MatKhau)
                 {
@@ -237,6 +237,20 @@ namespace ECommerceMVC.Controllers
 
             return View(model);
         }
-
+        public IActionResult GetUserInfo()
+        {
+            var customerID=User.FindFirst(MySetting.CLAIM_CUSTOMERID)?.Value;
+            var khachHang = _context.KhachHangs.SingleOrDefault(p => p.MaKh == customerID);
+            if (customerID != null)
+            {
+                return Json(new
+                {
+                    hoTen=khachHang.HoTen,
+                    diaChi=khachHang.DiaChi,
+                    dienThoai=khachHang.DienThoai
+                });
+            }
+            return Json(null);
+        }
     }
 }

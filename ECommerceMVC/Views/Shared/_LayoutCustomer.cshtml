@@ -54,13 +54,13 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">SmartShop</h1></a>
+                    <a asp-controller="Home" asp-action="Index" class="navbar-brand"><h1 class="text-primary display-6">SmartShop</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
                             <a asp-controller="HangHoa" asp-action="Index" class="nav-item nav-link">Shop</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -104,10 +104,7 @@
             </div>
         </div>
         <!-- Modal Search End -->
-
-        <div style="min-height:400px">
-            @RenderBody()
-        </div>
+        @RenderBody()
       
         @await Html.PartialAsync("_Footer")
     </div>

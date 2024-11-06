@@ -6,6 +6,7 @@
         <ul class="list-unstyled fruite-categorie">
             @foreach(var item in Model)
             {
+
                 <li>
                     <div class="d-flex justify-content-between fruite-name">
                         <a asp-controller="HangHoa" asp-action="Index" asp-route-loai="@item.MaLoai" >

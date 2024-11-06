@@ -357,12 +357,20 @@
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\banner-08.jpg"
     },
     {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\hero-img-7.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\hero-img-7.jpg"
+    },
+    {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\hero-img-9.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\hero-img-9.jpg"
     },
     {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\man.jpg",
       "PackagePath": "staticwebassets\\Hinh\\KhachHang\\man.jpg"
+    },
+    {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\map.jpg",
+      "PackagePath": "staticwebassets\\Hinh\\KhachHang\\map.jpg"
     },
     {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\Hinh\\KhachHang\\woman.jpg",
@@ -1363,6 +1371,10 @@
     {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\payment.png",
       "PackagePath": "staticwebassets\\img\\payment.png"
+    },
+    {
+      "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\shop-banner.jpg",
+      "PackagePath": "staticwebassets\\img\\shop-banner.jpg"
     },
     {
       "Id": "D:\\ASP_project\\ECommerceMVC\\ECommerceMVC\\wwwroot\\img\\single-item.jpg",

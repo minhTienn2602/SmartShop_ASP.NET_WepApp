@@ -1,0 +1,74 @@
+﻿@model IEnumerable<ECommerceMVC.ViewModels.HoaDonVM>
+@{
+    ViewData["Title"] = "MyOrder";
+}
+
+<!-- Single Page Header start -->
+<div class="container-fluid page-header py-5">
+    <h1 class="text-center text-white display-6">Đơn hàng</h1>
+    <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item active text-white">MyOrder</li>
+    </ol>
+</div>
+<!-- Single Page Header End -->
+<!-- Cart Page Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">MaHD</th>
+                        <th scope="col">Người đặt</th>
+                        <th scope="col">Ngày đặt</th>
+                        <th scope="col">Thanh toán</th>
+                        <th scope="col">Số lượng sản phẩm</th>
+                        <th scope="col">Tổng giá</th>
+                        <th scope="col">Chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                      
+                        <tr>
+                            <td>
+                                <p class="mb-0 mt-4">@item.MaHD</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.HoTen</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.NgayDat</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.CachThanhToan</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.TongSoLuong</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@item.TongGia</p>
+                            </td>
+                            <td>
+                                <a title="Chi tiết" class="btn btn-md rounded-circle bg-light border mt-4">
+                                    <i class="fas fa-regular fa-box-open fa-x"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-5">
+            
+            <a asp-controller="HangHoa" asp-action="Index" class="btn border-secondary rounded-pill px-4 py-3 text-primary" >Quay lại mua sắm</a>
+        </div>
+        
+    </div>
+</div>
+<!-- Cart Page End -->
+
